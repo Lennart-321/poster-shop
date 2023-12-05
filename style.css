@@ -1,0 +1,227 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(178, 236, 236);
+
+  margin: 0;
+}
+
+#checkout-body {
+  background-color: rgb(17, 56, 56);
+}
+
+main {
+  width: 80%;
+  /* background-color: rgb(70, 114, 114); */
+  margin-bottom: 120px;
+}
+
+body > header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(27, 160, 116);
+  position: relative;
+}
+
+main h2 {
+    text-align: center;
+    color: #ddd;
+}
+
+.checkout {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 120px;
+  height: 30px;
+  border-radius: 7px;
+  background-color: lightgreen;
+
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+body > header > .menu {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-content: space-around; */
+  margin-block: 20px;
+}
+
+.card {
+  background-color: rgb(205, 255, 226);
+  width: 200px;
+  height: 400px;
+  margin: 5px;
+  position: relative;
+}
+.card img {
+  width: 100%;
+}
+
+.card > p {
+  margin: auto;
+  /* text-align: left; */
+  width: 90%;
+  font-size: smaller;
+}
+
+.cart-button {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+
+  height: 25px;
+}
+
+.cart-content > table {
+    table-layout: auto;
+    width: 77%;
+    /* background-color: bisque; */
+    /* border: 1px solid; */
+    margin-inline: 12%;
+    color: #ddd;
+}
+th {
+    font-size: smaller;
+    font-weight: lighter;
+    background-color: rgb(82, 22, 22);
+    height: 20px;
+}
+th, td {
+    /* border: 1px solid; */
+    width: 33.33%;
+    text-align: center;
+}
+td {
+    height: 30px;
+}
+th.col3 {
+    padding-right: 50px;
+}
+
+.col1 {
+    text-align: left;
+    width:30%;
+}
+.col3 {
+    text-align: right;
+}
+tr:last-of-type {
+    font-weight: bold;
+    /* border-top: 2px solid; */
+}
+tr:last-of-type > td {
+    border-top: 1px solid #fff;
+    margin-top: 10px;
+}
+
+
+.cart-content li {
+    background-color: azure;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.span-col3 {
+    position: relative;
+    right: 0;
+}
+
+.cart-content > ul {
+    list-style: none;
+}
+
+#buy-button-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.buy-button {
+    height: 40px;
+    width: 180px;
+    border-radius: 7px;
+    background-color: #900;
+    color: white;
+    font-size: large;
+}
+
+.card h3 {
+  margin-top: 0;
+  text-align: center;
+  font-size: medium;
+}
+
+.big-card {
+  /* transform: scale(1.3); */
+  width: 306px;
+  height: 612px;
+}
+.checkout-card {
+    height: 380px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0,0,0,.7);
+  color: white;
+  width: 100%;
+  padding-bottom: 20px;
+  position: fixed;
+  bottom: 0;
+}
+footer > section {
+  display: flex;
+  flex-direction: column;
+}
+
+footer > section > h3 {
+  margin-bottom: 0;
+}
+
+footer > section > a {
+  text-decoration: none;
+  color: white;
+}
+
+footer > section > ul {
+  display: flex;
+  justify-content: flex-start;
+
+  padding-left: 0;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  border-color: rgb(255, 0, 140);
+}
+footer > section > p {
+  margin-top: 0;
+}
+footer > section > ul {
+  margin-top: 0;
+  /* background-color: blueviolet; */
+}
+footer > section > ul > li {
+  margin-left: 0;
+  /* background-color: blueviolet; */
+}
+footer > section > ul > li img {
+  width: 20px;
+  margin-right: 5px;
+}
