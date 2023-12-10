@@ -29,8 +29,8 @@ body > header {
 }
 
 main h2 {
-    text-align: center;
-    color: #ddd;
+  text-align: center;
+  color: #ddd;
 }
 
 .checkout {
@@ -58,7 +58,6 @@ body > header > .menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* align-content: space-around; */
   margin-block: 20px;
 }
 
@@ -75,10 +74,62 @@ body > header > .menu {
 
 .card > p {
   margin: auto;
-  /* text-align: left; */
   width: 90%;
   font-size: smaller;
 }
+
+.cart-content {
+  display: flex;
+  justify-content: center;
+}
+
+.flextable {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 630px;
+  color: #ddd;
+}
+
+.flexmem {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  margin-block: 0;
+  padding-block: 0;
+  font-size: large;
+}
+.flexmem > p {
+  margin-block: 10px;
+}
+
+.flextable > div:first-child {
+  background-color: rgb(82, 22, 22);
+  font-size: smaller;
+}
+
+.flexmem > p:first-of-type {
+  width: 100px;
+  margin-left: 5px;
+}
+.flexmem > p:nth-of-type(2) {
+  width: 70px;
+}
+
+.flexmem > p:last-of-type {
+  width: 100px;
+}
+
+.flexmem:nth-last-child(2) {
+  padding-bottom: 0.5vw;
+}
+.flexmem:last-of-type {
+  border-top: 1px solid #222;
+  padding-top: 0.5vw;
+}
+
 
 .cart-button {
   position: absolute;
@@ -88,77 +139,72 @@ body > header > .menu {
   height: 25px;
 }
 
-.cart-content > table {
-    table-layout: auto;
-    width: 77%;
-    /* background-color: bisque; */
-    /* border: 1px solid; */
-    margin-inline: 12%;
-    color: #ddd;
+/* .cart-content > table {
+  table-layout: auto;
+  width: 77%;
+  margin-inline: 12%;
+  color: #ddd;
+  background-color: azure;
 }
 th {
-    font-size: smaller;
-    font-weight: lighter;
-    background-color: rgb(82, 22, 22);
-    height: 20px;
+  font-size: smaller;
+  font-weight: lighter;
+  background-color: rgb(82, 22, 22);
+  height: 20px;
 }
-th, td {
-    /* border: 1px solid; */
-    width: 33.33%;
-    text-align: center;
+th,
+td {
+  width: 33.33%;
+  text-align: center;
 }
 td {
-    height: 30px;
+  height: 30px;
 }
 th.col3 {
-    padding-right: 50px;
+  padding-right: 50px;
 }
 
 .col1 {
-    text-align: left;
-    width:30%;
+  text-align: left;
+  width: 30%;
 }
 .col3 {
-    text-align: right;
+  text-align: right;
 }
 tr:last-of-type {
-    font-weight: bold;
-    /* border-top: 2px solid; */
+  font-weight: bold;
 }
 tr:last-of-type > td {
-    border-top: 1px solid #fff;
-    margin-top: 10px;
-}
-
+  border-top: 1px solid #fff;
+  margin-top: 10px;
+} */
 
 .cart-content li {
-    background-color: azure;
-    /* display: flex;
-    justify-content: space-between; */
+  background-color: azure;
 }
 
 .span-col3 {
-    position: relative;
-    right: 0;
+  position: relative;
+  right: 0;
 }
 
 .cart-content > ul {
-    list-style: none;
+  list-style: none;
 }
 
 #buy-button-div {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
 }
 .buy-button {
-    height: 40px;
-    width: 180px;
-    border-radius: 7px;
-    background-color: #900;
-    color: white;
-    font-size: large;
+  height: 40px;
+  width: 180px;
+  border-radius: 7px;
+  background-color: #900;
+  color: white;
+  font-size: large;
 }
 
 .card h3 {
@@ -173,13 +219,13 @@ tr:last-of-type > td {
   height: 612px;
 }
 .checkout-card {
-    height: 380px;
+  height: 380px;
 }
 
 footer {
   display: flex;
   justify-content: space-around;
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   width: 100%;
   padding-bottom: 20px;
